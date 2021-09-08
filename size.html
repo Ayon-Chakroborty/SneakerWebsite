@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Size Guide</title>
+    <link rel="stylesheet" href="size.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.PNG" width="125px">
+                </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sneakers.html">Sneakers</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="news.html">Sneaker News</a></li>
+                    <li><a href="size.html">Size Guide</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+    <br>
+    <h2 class="title">Sneaker Size Guide</h2>
+    <br>
+    <div class="container-table">
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>UK</th>
+                    <th>European</th>
+                    <th>US</th>
+                    <th>Japan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>6</td>
+                    <td>38.5</td>
+                    <td>6.5</td>
+                    <td>24.5</td>
+                </tr>
+                <tr>
+                    <td>6.5</td>
+                    <td>39</td>
+                    <td>7</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>40</td>
+                    <td>7.5</td>
+                    <td>25.5</td>
+                </tr>
+                <tr>
+                    <td>7.5</td>
+                    <td>41</td>
+                    <td>8</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>42</td>
+                    <td>8.5</td>
+                    <td>26.5</td>
+                </tr>
+                <tr>
+                    <td>8.5</td>
+                    <td>43</td>
+                    <td>9</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>44</td>
+                    <td>10</td>
+                    <td>27.5</td>
+                </tr>
+                    <td>9.5</td>
+                    <td>44</td>
+                    <td>10.5</td>
+                    <td>28</td>
+                </tr>
+                </tr>
+                    <td>10</td>
+                    <td>44</td>
+                    <td>10.5</td>
+                    <td>28.5</td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.PNG" alt="">
+                    <p>Our purpose is to provide the latest news on sneakers</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="https://www.adidas.com/us/yeezy">Adidas Yeezys</a></li>
+                        <li><a href="https://solelinks.com/">SoleLinks</a></li>
+                        <li><a href="https://www.nike.com/ca/fr/launch">Nike Sneakers</a></li>
+                        <li><a href="https://sneakernews.com/">SneakerNews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Social Media</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li><a href="mailto:gv5072@wayne.edu">Send Email</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px"
+            }
+            else{
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+</html>

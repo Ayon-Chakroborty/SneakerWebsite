@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="contactstyle.css">>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="images/logo.PNG" width="125px">
+                    </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sneakers.html">Sneakers</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="news.html">Sneaker News</a></li>
+                        <li><a href="size.html">Size Guide</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+                </div>
+                </div>
+            </div>
+    
+            <form action="mailto: gv5072@wayne.edu" method="POST" enctype="text/plain">
+            <div class="form">
+                <div class="wrapper">
+                    <div class="title">
+                        <h1>Contact Form</h1>
+                    </div>
+                    <div class="contact-form">
+                        <div class="input-fields">
+                        <input type="text" class="input" placeholder="Name">
+                        <input type="text" class="input" placeholder="Email Address">
+                        <input type="text" class="input" placeholder="Phone">
+                        <input type="text" class="input" placeholder="Subject">
+                        </div>
+                        <div class="msg">
+                        <textarea placeholder="Message"></textarea>
+                        <div class="button"> <button type="submit">Send</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </form>
+    </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px"
+            }
+            else{
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+</html>

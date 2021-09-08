@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker News</title>
+    <link rel="stylesheet" href="news.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.PNG" width="125px">
+                </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sneakers.html">Sneakers</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="news.html">Sneaker News</a></li>
+                    <li><a href="size.html">Size Guide</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+    <div class="video-container">
+        <h1>Latest Sneaker News</h1>
+        <div class="news-row">
+            <div class="news-col">
+                <div class="feature-img">
+                    <img src="media/air-jordan-11-adapt-da7990-100.jpg" width="100%">
+                    <img src="media/play.png" class="play-btn" onclick="playVideo('media/The MOST LIMITED Air Jordan Ever_! WEEKLY HEAT.mp4')">
+                </div>
+            </div>
+            <div class="news-col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="media/LOT-2_AIR-JORDAN-1-TYPS_NIKE-1985_V2-256x256.jpg" alt="">
+                        <img src="media/play.png" class="play-btn" onclick="playVideo('media/Nike_Jordan_Converse All-Star 2020 Footwear Preview.mp4')">
+                    </div>
+                    <p>Jordan Converse All-Star 2020 Footwear Preview</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="media/nike shoes.jpg" alt="">
+                        <img src="media/play.png" class="play-btn" onclick="playVideo('media/Sneaker Releases 2020_ SIT OR SELL December (Part 1).mp4')">
+                    </div>
+                    <p>Sneaker Releases 2020 SIT OR SELL December</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls id="myVideo">
+            <source src="media/The MOST LIMITED Air Jordan Ever_! WEEKLY HEAT.mp4" type="video/mp4">
+        </video>
+        <img src="media/close.png" class="close-btn" onclick="stopVideo()">
+    </div>
+    <script>
+        var videoPlayer = document.getElementById("videoPlayer");
+        var myVideo = document.getElementById("myVideo");
+
+        function stopVideo(){
+            videoPlayer.style.display = "none";
+        }
+
+        function playVideo(file){
+            myVideo.src = file;
+            videoPlayer.style.display = "block";
+        }
+    </script>
+    <br>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.PNG" alt="">
+                    <p>Our purpose is to provide the latest news on sneakers</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="https://www.adidas.com/us/yeezy">Adidas Yeezys</a></li>
+                        <li><a href="https://solelinks.com/">SoleLinks</a></li>
+                        <li><a href="https://www.nike.com/ca/fr/launch">Nike Sneakers</a></li>
+                        <li><a href="https://sneakernews.com/">SneakerNews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Social Media</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li><a href="mailto:gv5072@wayne.edu">Send Email</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px"
+            }
+            else{
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+</html>
